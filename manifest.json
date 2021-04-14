@@ -1,0 +1,14 @@
+{
+    "name": "Cosmos Job Extras",
+    "version": "0.1",
+    "description": "",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["https://*.osdinfra.net/cosmos/*/_Jobs/"],
+        "js": ["script.js"]
+    }]
+}
